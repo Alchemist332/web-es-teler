@@ -95,24 +95,29 @@ img {
 
 @media (max-width: 768px) {
   .container {
-    width: 350px;
-    height: 450px;
+    width: 90%;
+    height: auto;
     margin: 30px auto;
     padding-bottom: 20px;
+    overflow: hidden;
   }
 
   img {
-    width: 330px;
-    height: 250px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
   }
 
   .gabungan-card {
     gap: 10px;
     width: 98%;
+    margin-top: 20px;
   }
   .card {
     flex: 1 1 45%;
-    max-width: 350px;
+    max-width: none;
     padding: 15px;
   }
   .card-judul {
