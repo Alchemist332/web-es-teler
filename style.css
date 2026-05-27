@@ -1,4 +1,247 @@
-body {
+body {body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+header {
+  background-color: rgb(16, 1, 1);
+  padding: 20px;
+  text-align: left;
+  font-size: 24px;
+  color: white;
+}
+/* dipakai sampai sebelum footer halaman 1 */
+.container {
+  display: flex;
+  background-color: rgb(251, 254, 251);
+  height: 450px;
+  width: 350px;
+  border: 2px solid rgb(204, 204, 204);
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  margin: 150px auto;
+  box-shadow: 0px 0px 10px 5px rgba(143, 139, 139, 0.5);
+  justify-content: center;
+}
+
+.container:hover {
+  background-color: rgb(137, 137, 137);
+}
+
+.title {
+  padding-top: 80px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.name,
+.number-hp,
+.address,
+.city,
+.province {
+  font-size: 16px;
+  margin: 10px 0;
+  top: 1px;
+  padding: 2px;
+}
+
+img {
+  width: 330px;
+  height: 250px;
+  border: 4px solid rgb(0, 0, 0);
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  display: block;
+  margin: 3px auto;
+}
+
+.gabungan-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  width: 95%;
+  margin: 60px auto;
+}
+
+.card {
+  flex: 1 1 22%;
+  max-width: 350px;
+  min-height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  background-color: rgb(137, 137, 137);
+}
+
+.card-judul {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-isi {
+  font-size: 14px;
+  line-height: 1.5;
+}
+/* menu */
+.menu-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 50px auto;
+}
+.menu-container {
+  display: flex;
+  background-color: rgb(251, 254, 251);
+  height: 330px;
+  width: 300px;
+  border: 2px solid rgb(204, 204, 204);
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  box-shadow: 0px 0px 10px 5px rgba(143, 139, 139, 0.5);
+  justify-content: center;
+  overflow: hidden;
+}
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.menu-card img {
+  width: 280px;
+  height: 250px;
+  border: 4px solid rgb(0, 0, 0);
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  margin: 3px auto;
+}
+.menu-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  margin-top: 10px;
+}
+.menu-name {
+  font-size: 14px;
+  text-align: left;
+}
+.menu-price {
+  font-size: 14px;
+  color: rgb(255, 0, 0);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+    padding-bottom: 20px;
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  .gabungan-card {
+    gap: 10px;
+    width: 98%;
+    margin-top: 20px;
+  }
+  .card {
+    flex: 1 1 45%;
+    max-width: none;
+    padding: 15px;
+  }
+  .card-judul {
+    font-size: 16px;
+  }
+  .card-isi {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-wrapper {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .menu-container {
+    width: 48%;
+    height: auto;
+    margin: 20px 0;
+    overflow: hidden;
+  }
+
+  .menu-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .menu-name,
+  .menu-price {
+    font-size: 11px;
+  }
+}
+
+footer {
+  background-color: rgb(16, 1, 1);
+  padding: 20px;
+  text-align: justify;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+}
+.button {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.button-link {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  position: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.button-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.photo-container {
+  display: flex;
+  background-color: rgb(251, 254, 251);
+  height: 450px;
+  width: 350px;
+  border: 2px solid rgb(204, 204, 204);
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  margin: 150px auto;
+  box-shadow: 0px 0px 10px 5px rgba(143, 139, 139, 0.5);
+  justify-content: center;
+}
+
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
