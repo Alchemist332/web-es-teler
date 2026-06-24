@@ -411,8 +411,9 @@ footer {
 
 @media (max-width: 768px) {
   .container {
-    width: 90%;
-    height: auto;
+    width: 260px;
+    height: 380px;
+    flex: 0 0 auto;
     margin: 30px auto;
     padding-bottom: 20px;
     overflow: hidden;
