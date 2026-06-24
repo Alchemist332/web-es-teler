@@ -8,30 +8,74 @@
   </head>
   <body>
     <header>
-      <h1>Es Teler 99</h1>
+      <nav class="navbar">
+        <div class="logo">Es<span>Teler99</span></div>
+
+        <label for="menu-toggle" class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <ul class="nav-links">
+          <li><a href="#beranda" class="active">Beranda</a></li>
+          <li><a href="#profil">Profil Usaha</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+          <li><a href="#tentang kami">Tentang Kami</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <div class="title">
-      <h2>Profile</h2>
-    </div>
-
-    <div class="container">
-      <div class="profile-card">
-        <img src="profile.jpeg" alt="Profile Image" />
-        <p class="name"><b>Nama:</b> Muhammad Andy Maulana</p>
-        <p class="number-hp"><b>No. HP:</b> 082299546454</p>
-        <p class="address">
-          <b>Alamat:</b> Jalan Ampera,<br />
-          Dekat Pesantren Darunna'im
-        </p>
-        <p class="operational"><b>Jam Operasional:</b> 08:00 - 17:00</p>
-        <p class="city"><b>Kota:</b> Pontianak, Kalimantan Barat</p>
+    <!-- Beranda -->
+    <section id="beranda" class="hero">
+      <div class="wrap">
+        <div class="hero-photo">
+          <img src="es teler beranda.jpeg" alt="Semangkuk Es Teler 99" />
+        </div>
+        <div class="hero-text">
+          <h1 class="brand">Segarnya teler,<br />hangatnya cerita.</h1>
+          <p>
+            Es teler asli racikan rumahan dari Pontianak — kelapa muda,
+            kolang-kaling, agar-agar, roti, kacang merah dan buah pilihan dalam
+            satu mangkuk yang menyegarkan siang harimu.
+          </p>
+          <a href="https://wa.me/6282299546454" class="btn btn-primary"
+            >💬 Pesan via WhatsApp</a
+          >
+        </div>
       </div>
+    </section>
+
+    <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <path
+        fill="#2F6B52"
+        d="M0,30 C240,60 480,0 720,20 C960,40 1200,10 1440,30 L1440,60 L0,60 Z"
+      ></path>
+    </svg>
+
+    <div class="title">
+      <h2>Profil Pemilik Usaha Es Teler</h2>
     </div>
+    <section id="profil">
+      <div class="container">
+        <div class="profile-card">
+          <img src="profile.jpeg" alt="Profile Image" />
+          <p class="name"><b>Nama:</b> Muhammad Andy Maulana</p>
+          <p class="number-hp"><b>No. HP:</b> 082299546454</p>
+          <p class="address">
+            <b>Alamat:</b> Jalan Ampera,<br />
+            Dekat Pesantren Darunna'im
+          </p>
+          <p class="operational"><b>Jam Operasional:</b> 08:00 - 17:00</p>
+          <p class="city"><b>Kota:</b> Pontianak, Kalimantan Barat</p>
+        </div>
+      </div>
+    </section>
     <!-- Isi konten -->
     <section class="gabungan-card">
       <div class="card">
-        <h2 class="card-judul">Tentang Saya</h2>
+        <h2 class="card-judul">Tentang Usaha</h2>
         <p class="card-isi">
           Pemilik adalah seorang pengusaha UMKM di bidang kuliner, khususnya
           minuman segar, yang berdiri sejak tahun 2023. Usaha ini menjual es
@@ -88,31 +132,90 @@
         </p>
       </div>
     </section>
-    <br /><br /><br /><br />
+    <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <path
+        fill="#2F6B52"
+        d="M0,30 C240,60 480,0 720,20 C960,40 1200,10 1440,30 L1440,60 L0,60 Z"
+      ></path>
+    </svg>
+
     <!-- Menu -->
-    <div class="title">
-      <h2>Menu</h2>
-    </div>
-    <div class="menu-wrapper">
-      <section class="menu-container">
-        <div class="menu-card">
-          <img src="es teler large.jpeg" alt="Es Teler Large" />
-          <div class="menu-info">
-            <span class="menu-name">Es Teler Large</span>
-            <span class="menu-price">Rp 12.000</span>
+    <section id="menu">
+      <div class="title">
+        <h2>Menu Es Teler</h2>
+      </div>
+      <div class="menu-wrapper">
+        <div class="menu-container">
+          <div class="menu-card">
+            <img src="es teler large.jpeg" alt="Es Teler Large" />
+            <div class="menu-info">
+              <span class="menu-name">Es Teler Large</span>
+              <span class="menu-price">Rp 12.000</span>
+            </div>
           </div>
         </div>
-      </section>
-      <section class="menu-container">
-        <div class="menu-card">
-          <img src="es teler medium.jpeg" alt="Es Teler Medium" />
-          <div class="menu-info">
-            <span class="menu-name">Es Teler Medium</span>
-            <span class="menu-price">Rp 10.000</span>
+        <div class="menu-container">
+          <div class="menu-card">
+            <img src="es teler medium.jpeg" alt="Es Teler Medium" />
+            <div class="menu-info">
+              <span class="menu-name">Es Teler Medium</span>
+              <span class="menu-price">Rp 10.000</span>
+            </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+    <!-- Kontak -->
+    <section class="section" id="kontak">
+      <div class="wrap">
+        <div class="cta">
+          <div>
+            <h2>Siang ini panas? Saatnya nge-teler.</h2>
+            <p>
+              Tinggal chat, kami siapkan dalam 10 menit. Bisa ambil langsung
+              atau diantar di sekitar area kami.
+            </p>
+          </div>
+          <a href="https://wa.me/6282299546454" class="btn btn-primary"
+            >💬 Chat WhatsApp Sekarang</a
+          >
+        </div>
+      </div>
+    </section>
+    <br />
+
+    <section id="tentang kami">
+      <div class="team-wrapper">
+        <div class="team-container">
+          <div class="team-card">
+            <img src="es teler large.jpeg" alt="Es Teler Large" />
+            <div class="team-info">
+              <li>Video Editor</li>
+              <h2 class="team-name">Feprian</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-container">
+          <div class="team-card">
+            <img src="es teler medium.jpeg" alt="Es Teler Medium" />
+            <div class="team-info">
+              <li>Frontend Developer</li>
+              <h2 class="team-name">Muhammad Kasyful 'Azim</h2>
+            </div>
+          </div>
+        </div>
+        <div class="team-container">
+          <div class="team-card">
+            <img src="es teler medium.jpeg" alt="Es Teler Medium" />
+            <div class="team-info">
+              <li>UI/UX Designer</li>
+              <h2 class="team-name">Rifa Rakha Hafidzhta</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <p>&copy; 2026 Es Teler 99.</p>
